@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif; 
+} 
+body{
+	
+	background:#9CC3D5FF;
+}
+input {
+	
+	display:none;
+}
+
+
+.container{
+	
+	max-width:1300px;
+	margin:auto;
+	background:#0063B2FF;
+	overflow:auto;
+	margin-top:50px;
+	height:80px;
+	
+	border-radius:100px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.line h1 {
+border:2px solid black;
+border-radius:100px;
+font-weight: normal; 
+font-size: 55px;
+position: relative; 
+margin: 0px 0;
+padding-top:0px ;
+color:white;
+line-height:76px;
+}
+
+
+.line h1 ::before{
+
+content: '';
+position: absolute;
+width: 100px;
+height: 3px;
+background-color:white;
+bottom: 4px;
+left: 50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+	
+	0%{
+		width;100px;
+	}
+50%{
+	width:200px;
+	}
+100%{
+	
+	width:300px;
+	}
+}
+.home{
+	
+	margin-left:540px;
+	margin-bottom:30px;
+	margin-top:40px;
+}
+.home ul li{
+	background-color:#EEB238FF;
+	width:50px;
+	border:2px solid black;
+	height:50px;
+	text-align:center;
+	line-height:45px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:100px;
+	margin-left:-500px;
+	margin-right:3px;
+	font-size:20px;
+	
+	
+}
+.home  :hover{
+background:grey;
+border-radius:100px;
+
+}
+
+.menu{
+	
+	margin-left:410px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.menu ul li{
+	background-color:#EEB238FF;
+	width:130px;
+	border:1px solid black;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:100px;
+	margin-left:2px;
+	margin-right:3px;
+	
+	
+}
+.menu ul li a{
+
+	text-decoration:none;
+	color:black;
+	display:block;
+}
+.menu ul li.active a{
+	
+	background:black;
+	color:white;
+	border-radius:100px;
+}
+.menu ul li a:hover{
+	background:black;
+	color:white;
+	border-radius:100px;
+
+
+	}
+.menu  sub {
+	display:none;
+}
+.menu ul ul{
+	display:none;
+
+} 
+.menu ul li:hover ul {
+	display:block; 
+}
+
+
+}
+.wrapper{
+	display: flex;
+	width: 0%;
+	justify-content: space-around;
+	margin-left:10px;
+}
+
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 3rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.8s ease-in-out;
+	float:left;
+	margin:25px
+
+      
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+
+.card:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+	z-index: 2;
+	transition: 0.5s all;
+	opacity: 0;
+}
+
+.card:hover:before{
+	opacity: 1;
+}
+
+.card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.card .info h1{
+	margin: 0;
+}
+
+.card .info p{
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
+
+
+
+
+</style>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AM Webtech</title>
+
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+<div class="line"><h1><b>ℙ𝕃𝔸ℂ𝔼𝕊</b></h1> </div>
+
+</div>
+<nav>
+
+<div class="home">
+
+<ul>
+		<li><a href="main.html"  >🏠</li>
+		</ul>
+
+</div>
+
+
+		<div class="menu">
+		
+<ul>
+	
+		
+		
+		<li><a href="Historicalplace.html">Historical</li>
+		<li class="active" ><a href="hillplace.html">Hill Station</a></li>
+		<li><a href="Templesplace.html">Temples</li>
+		<li><a href="Beachesplace.html">Beaches</li>
+</div>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="wrapper">
+		
+		<div class="card">
+			<a href="img/Hill 1.jpg"><img src="img/Hill 1.jpg"></a>
+			<div class="info">
+				<h1> Manali</h1>
+				<p>Regarded to be one of the best hill stations in India, Manali is a heaven for all the snow lovers. With delicate temperatures during the summers, and chilling weather during the winters, Manali is one of the peaceful places to visit in North India. </p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="img/Hill 2.jpg">
+			<div class="info">
+				<h1> Gulmarg, Jammu & Kashmir</h1>
+				<p> Boasting the scenic beauty of the ever-wonderful Jammu and Kashmir, Gulmarg stands on a different level among all the hill stations in North India.Set at an altitude of 2,730meters.</p>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<img src="img/Hill 3.jpg">
+			<div class="info">
+				<h1> Shimla</h1>
+				<p> With the hill stations in Himachal Pradesh being such beauties,While you are there, you can check out the Chadwick Falls, The Ridge, Mall Road, Christ Church and Jaku Hill.</p>
+			</div>
+		</div>
+		
+		
+		<div class="card">
+			<img src="img/Hill 4.jpg">
+			<div class="info">
+				<h1>  Srinagar</h1>
+				<p> Lying on the banks of the river Jhelum, Srinagar is certainly a beauty owing to its lovely houseboats, historic gardens, wandering rivers and impeccable climate. </p>
+			</div>
+		</div>
+		
+		
+		<div class="card">
+			<img src="img/Hill 5.jpg">
+			<div class="info">
+				<h1>Maha<br>baleshwar,<br>Maharashtra</h1>
+				<p> One of the Best Hill Stations in India.  It is known for the enchanting views of Sahyadri Ranges, cool climates.</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 6.jpg">
+			<div class="info">
+				<h1> Saputara</h1>
+				<p>Saputara is the only hill station in the Dang district in the south of Gujarat. This small and peaceful town of lies at an altitude of about 1000 metres, and features a consistently pleasant climate all through the year, making it a favourite for tourists.</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 7.jpg">
+			<div class="info">
+				<h1>  Mussoorie</h1>
+				<p> Mussoorie offers a view of the Doon valley to the south and the Himalayas to the north.Stroll along Mall road, take rides in cable cars up to Gun Hill, or see the beautiful town and beyond from the highest point, Lal Tibba.
+</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 8.jpg">
+			<div class="info">
+				<h1>  Gangtok, sikkim</h1>
+				<p>Gangtok has a ropeway which offers a bird’s eye view of the city and surrounding locales. Walking is the best way for visitors to explore Gangtok and its charming people.</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 9.jpg">
+			<div class="info">
+				<h1>   Binsar, Uttrakhand</h1>
+				<p>A small town nestled within the Binsar Wildlife Sanctuary; Binsar is blessed with overwhelming views of snow-clad peaks like Nanda Devi, Kedarnath, Panchachuli, Chaukhamba, and Nanda Kot.</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 10.jpg">
+			<div class="info">
+				<h1> Shillong, Meghalaya</h1>
+				<p> Widely known as the ‘Scotland of the East’,You can spend your time here at the Shillong peak and gaze at the lush green hills, have a picnic near Elephant Falls, or enjoy a boat ride over the Umiam Lake.</p>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<img src="img/Hill 11.jpg">
+			<div class="info">
+				<h1>  Darjeeling, West Bengal</h1>
+				<p>  Famous for its large tea estates, Darjeeling has magnificent views of Mount Kanchenjunga, waterfalls, and several hills.</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="img/Hill 12.jpg">
+			<div class="info">
+				<h1> Nainital, Uttrakhand</h1>
+				<p>Nainital provides ample opportunities for fun and exploration for the solo traveller. Parasailing, horse-riding, kayaking, canoeing, and rock climbing attract adventure lovers.</p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 13.jpg">
+			<div class="info">
+				<h1> Dharamshala, Himachal Pradesh </h1>
+				<p> Along with being one of the best mountain destinations in India for its tranquillity, solitude and center of Tibetan Buddhist culture, Dharamshala in Himachal Pradesh is home to the holy Dalai Lama.  </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 14.jpg">
+			<div class="info">
+				<h1> Auli-Snow, Uttrakhand  </h1>
+				<p>  Auli-Snow is great for spending your summer vacation, not just for its beauty, but also for the opportunities it provides for adventure-based activities. </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 15.jpg">
+			<div class="info">
+				<h1>Ooty, Tamilnadu </h1>
+				<p>  Ooty or Ootacamund is famous for its picturesque sites, pristine lake and rolling hills. But the chief attractions of Ooty are the sprawling tea gardens. </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 16.jpg">
+			<div class="info">
+				<h1>Pahalgam, Kashmir </h1>
+				<p> The romantic ambience and scenic vistas of lofty Himalayan peaks adorned with tall deodar cedar trees and warm Kashmiri hospitality. </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 17.jpg">
+			<div class="info">
+				<h1>Dalhpusie, Himachal Pradesh </h1>
+				<p>  Dalhousie is beautiful tourist spot in Himachal, is one of the best hill stations to visit in India. Offering a panoramic view of Dhauladhar Mountain Range. </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 18.jpg">
+			<div class="info">
+				<h1> Khandala, Maharashtra</h1>
+				<p> A famous hill station in West India, is home to many beautiful caves, mountains and waterfalls, and offers an ideal escape from the hurriedness of city life!  </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 19.jpg">
+			<div class="info">
+				<h1>Tawang, Arunachal<br> Pradesh </h1>
+				<p>  The Shangri-la like place, adorned with India’s largest Buddhist Monastery, reflects the unmatched peace and beauty of Northeast India. </p>
+			</div>
+		</div>
+
+<div class="card">
+			<img src="img/Hill 20.jpg">
+			<div class="info">
+				<h1> Munnar, Kerala </h1>
+				<p>  This beautiful hill station in Kerala is characterized by tea-plantation-lined mountains, a whiff of exotic spices, and greenery that will put a smile on your face.Keep a day for the splendid wilderness and rare fauna of Eravikulam National Park.  </p>
+			</div>
+		</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+.home{
+	
+	margin-left:115px;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:2px;
+}
+.home ul li{
+	background-color:#00b894;
+	width:60px;
+	border:2px solid black;
+	height:60px;
+	text-align:center;
+	line-height:52px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:100px;
+	margin-left:-495px;
+	
+	margin-top:30px;
+	font-size:23px;
+	
+	
+}
+.home  :hover{
+
+background:yellow;
+border-radius:100px;
+
+}
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/contact.gif");
+    background-size:cover;
+}
+.contact .content
+{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h1
+{	text-align:top;
+	font-size: 50px;
+	font-weight: 500;
+	color: yellow;
+	font-family:jokerman;
+}
+.contact .content p
+{
+	font-weight: 300;
+	color: yellow;
+}
+.container
+{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+}
+.container .contactInfo
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+
+}
+.container .contactInfo .box .icon
+{
+	width: 60px;
+	height: 60px;
+	background: gold;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 50%;
+	font-size: 22px; 
+}
+
+
+.container .contactInfo .box .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: black;
+	flex-direction: column;
+	font-weight: 500;
+	color:white;
+	font-family:Calibra;
+	
+}
+.container .contactInfo .box .text h2
+{
+	font-weight: 1000;
+	color: gold;
+	font-family:elephant;
+	
+}
+.contactForm
+{
+	width: 40%;
+	padding: 40px;
+	background: white; 
+		border-radius:10%;
+}
+.contactForm h2
+{
+	font-size: 30px;
+	color: black;
+	font-weight: 500;
+}
+.contactForm .inputBox
+{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0; 
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+	resize: none;					
+}
+.contactForm .inputBox span
+{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0; 
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactForm .inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color: white;
+	border:none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+@media (max-width: 991px)
+{
+	.contact
+	{
+		padding: 50px;
+	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.countainer .contactInfo
+	{
+		margin-bottom: 40px;
+	}
+	.countainer .contactInfo,
+	.contactForm
+	{
+		width: 100%;
+	}
+}
+
+.footer{
+  background:#333;
+  text-align:center;
+  
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 5rem;
+}
+
+.footer .box-container .box h3{
+  font-size:35px;
+  padding:.7rem 0;
+  color:yellow;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size:20px;
+  padding:.7rem 0;
+  color:#eee;
+  text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+  color:orange;
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:orange;
+}
+
+
+</style>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	 
+</head>
+<body>
+
+
+	<section class="contact">
+		<div class="content">
+		 <div class="home">
+
+<ul>
+		<li><a href="main.html" >🏠</a></li>
+		</ul>
+
+</div>
+		<h1><b>Contact Us</b></h1>
+		<p>This is an example of Contact Us page...</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><i class="fa fa-map-marker"></i>
+                    </div>
+					<div class="text">
+						<b><h2>Address</h2></b>
+						<p>Akshardham Heaven Lux club Lucifer morningstar <br>Ahmedabad<br>380051</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-phone"></i>
+                    </div>
+					<div class="text">
+						<b><h2>Phone</h2></b>
+						<p>+91 7600143236</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><i class="fa fa-envelope-o"></i>
+                    </div>
+					<div class="text">
+						<b><h2>Email</h2></b>
+						<p>ravi8680vegad@gmail.com</p>
+					</div>
+				</div>
+			</div>	
+			<div class="contactForm">
+				 <form action="mailto:gadhiyashubham10@gmail.com" method="post" enctype="text/plain">
+					<h2>Send Message</h2>
+			       <div class="inputBox">
+					<input type="text" name="Name" required="required">
+					<span><b>Full Name</b></span>
+				   </div>
+				   <div class="inputBox">
+					<input type="text" name="Email" required="required">
+					<span><b>Email</b></span>
+				   </div>
+				   <div class="inputBox">
+                    <textarea required="required"></textarea>
+					<span><b>Type your Message...</b></span>
+				   </div>
+				    <div class="inputBox">
+					<input type="" name="" value="">
+				   </div>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>For a travel site, this means that design can be the determining factor in whether a visitor trusts recommendations and information.</p>
+        </div>
+         <div class="box">
+            <h3><b>Branch Locations</b></h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+           <h3> <b>Quick Links</b></h3>
+            <a href="main.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Historicalplace.html">Places</a>
+            <a href="pakages.html">packages</a>
+            <a href="photogalleryy.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3><b>Follow Us</b></h3>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+            <a href="https://twitter.com/login?lang=en">Twitter</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> © Copyright @ 2020 &emsp; created by <br><br> <span> ✦Ravi✦</span> 
+	
+	
+
+</section>
+
+</body>
+</html>

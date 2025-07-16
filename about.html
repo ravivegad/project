@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+<title>About us</title>
+<style>
+	
+	 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+		*{
+    box-sizing: border-box;
+	 margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+ 
+ 
+  font-family: Arial, Helvetica, sans-serif;
+     background-color:#1fbfb8;
+		  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading {
+meta name="viewport" content="width=device-width, initial-scale=1.0"
+width: 90%;
+text-align: center;
+background: #1978a5;
+margin-left:110px;
+margin-bottom:-60px;
+height:60px;
+border-radius:100px;
+
+
+
+}
+.head h1{
+
+
+font-weight: normal; 
+font-size: 55px;
+position: relative; 
+margin: 40px 0;
+line-height:58px;
+border:2px solid black;
+border-radius:100px;
+} 
+.head h1::before{
+
+content: '';
+position: absolute;
+width: 100px;
+height: 3px;
+background-color: crimson;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+	
+	0%{
+		width;100px;
+	}
+50%{
+	width:200px;
+	}
+100%{
+	
+	width:300px;
+	}
+}
+.home{
+	
+	margin-left:30px;
+	
+	
+	
+	
+	
+}
+.home ul li{
+
+	background-color: #1978a5;
+	width:65px;
+	
+	height:60px;
+	text-align:center;
+	line-height:53px;
+	text-decoration:none;
+	list-style:none;
+	border-radius:50px;
+	border:2px solid black;
+	font-size:25px;
+	cursor:pointer;
+	
+	
+}
+
+.home  ul li:hover{
+
+background: #d71b3b;
+border-radius:60px;
+
+}
+.image-section{
+float:right;
+width:40%;
+
+}		 
+.image-section	img{
+  width:70%;
+  height:auto;
+  margin-top:110px;
+  margin-left:30px;
+  border:3px solid black;
+  border-radius:15px;
+  
+  
+}	 
+
+
+.content h3{
+	margin-top:30px;
+	padding:50px;
+	
+
+
+}		 
+.content p{
+ 
+ font-family:sans-serif;
+font-size:20px;
+line-height:1.5; 
+padding-left:50px;
+
+}	
+.buttn{
+	margin-top:40px;
+	width:450px;
+	height:50px;
+	margin-left:80px;
+	
+	
+}	
+.buttn a{
+
+background-color:white;	
+padding-left:10px;
+padding-right:10px;
+text-decoration:none;
+color:white;
+font-size:20px;
+padding-top:5px;
+padding-bottom:5px;
+background: #d71b3b;
+border-radius:50px;
+border:2px solid black;
+}	 
+
+.buttn a:hover{
+	background-color: #1978a5;
+	color:white;
+	
+	
+}	
+
+
+.footer{
+
+  background:#333;
+  text-align:center;
+  margin-top:150px;
+  margin-bottom:-100px;
+  
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 5rem;
+}
+
+.footer .box-container .box h3{
+  font-size:35px;
+  padding:.7rem 0;
+  color: #e8d71e;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size:20px;
+  padding:.7rem 0;
+  color:#eee;
+  text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+  color:orange;
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:orange;
+}
+
+.wrapper{
+
+	margin-top:10px;
+	margin-left:370px;
+}
+  .wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 10px;
+  overflow: hidden;
+  background:white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  margin-top:30px;
+  border:1px solid red;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+
+
+
+.wrapper .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 30px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  color:black;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+ 
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #ff0000;
+}	 
+
+</style>
+
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+</head>
+<body> 
+
+<div class="heading">
+  
+<div class="head"><h1><b>About Us</b></h1> </div>
+
+</div>
+ <div class="home">
+
+<ul>
+		<li><a href="main.html" >🏠</a></li>
+		</ul>
+</div>
+
+
+<div class="image-section">
+<img src="img\Aboutlogo.jpg">
+</div>
+
+
+
+ <div class="content">
+  <h3>“The world is a book and those who do not travel read only one page.”</h3>
+  <p>For a travel site, this means that design can be the determining factor in whether a visitor trusts recommendations and information.The origin of the word "travel" is most likely lost to history. The term <b>"travel"</b> may originate from the Old French word travail, which means<b> 'work'</b>. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.</p>
+  </div>
+ <div class="buttn">
+<a href="">Read more</a>
+</div>
+
+<div class="wrapper">
+      <div class="button">
+    
+        <div class="icon"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> </a></div>
+        <span>Facebook</span>
+      </div>
+      <div class="button">
+        <div class="icon"><a href="https://twitter.com/login?lang=en"> <i class="fab fa-twitter"></i> </a></div>
+        <span>Twitter</span>
+      </div>
+      <div class="button">
+        <div class="icon"><a href="https://www.instagram.com/accounts/login/"> <i class="fab fa-instagram"></i> </a></div>
+        <span>Instagram</span>
+      </div>
+      
+
+      <div class="button">
+        <div class="icon"><a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i></a></div>
+        <span>YouTube</span>
+      </div>
+    </div>
+</div>
+
+	
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>For a travel site, this means that design can be the determining factor in whether a visitor trusts recommendations and information.</p>
+        </div>
+         <div class="box">
+            <h3><b>Branch Locations</b></h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+           <h3> <b>Quick Links</b></h3>
+            <a href="main.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Historicalplace.html">Places</a>
+            <a href="pakages.html">packages</a>
+            <a href="photogalleryy.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3><b>Follow Us</b></h3>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+            <a href="https://twitter.com/login?lang=en">Twitter</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> © Copyright @ 2023  &emsp; created by  <br><br> <span> ✦Ravi✦ </span> 
+	
+	
+
+</section>
+  

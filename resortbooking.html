@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img/resort.jpg");
+    background-position: center;
+   
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+.home{
+	
+	margin-left:px;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-top:2px;
+	
+}
+.home ul li{
+	background-color:#00b894;
+	width:50px;
+	border:2px solid black;
+	height:45px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:10px;
+	margin-left:30px;
+	
+	margin-top:20px;
+	font-size:25px;
+	
+	
+}
+.home  :hover{
+
+background:yellow;
+border-radius:10px;
+
+}
+#form{
+    background-color: #000;
+    height:400px;
+    width:800px;
+    margin: auto;
+    margin-top: 100px;
+    opacity:0.7;
+}
+#first-group{
+    border:none;
+    width:400px;
+    margin-top: 38px;
+    position: absolute;
+}
+#content{
+    border: 1px solid #fff;
+    margin:10px;
+    margin-left: 8px;
+    padding:5px;
+}
+#content #input-group{
+    border:none;
+    outline:none;
+    background: transparent;
+    margin-left:8px;
+    width:300px;
+    color:#fff;
+}
+::placeholder{
+    color:#fff;
+}
+.fa{
+    display:inline-block;
+    color:red;
+    border-right:1px solid #fff;
+    padding:8px;
+    margin-left: 8px;
+}
+#second-group{
+    border:none;
+    width:400px;
+    margin-top: 55px;
+    margin-left:400px;
+}
+#submit-btn{
+    margin-top: 30px;
+    margin-left: 600px;
+    background: transparent;
+    color:#fff;
+    width:150px;
+    border:1px solid red;
+    outline:none;
+    padding:10px;
+    font-size: 20px;
+}
+ .boton {
+  /*background: #00b894;*/
+  background: white;
+  color: white;
+  width:130px;
+  margin-top:-5px;
+  margin-left:330px;
+  border:5px solid green;
+}
+.boton a{
+	text-align:center;
+	color:black;
+	width:10px;
+	margin:20px;
+}
+.boton:hover {
+  background: yellow;
+  color: black;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort booking form</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+			 <div class="home">
+
+<ul>
+		<li><a href="pakages.html" >🔙</a></li>
+		</ul>
+
+</div>
+                <h1 class="text-white text-center" >  Booking Now</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Departure Date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">No.of guests</option>
+                            <option value="">1-5</option>
+                            <option value="">6-10</option>
+                            <option value="">11-20</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Arrival Date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">Room Type</option>
+                            <option value="">AC</option>
+                            <option value="">Non-AC</option>
+                            <option value="">Single Bed</option>
+                            <option value="">Double Bed</option>
+                        </select>
+                    </div>
+            
+                </div>
+				<br>
+<div class="boton">
+                 <a href="signhere.html"><b>Book Now</b></a>
+</div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

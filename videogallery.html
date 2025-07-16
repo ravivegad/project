@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif; 
+} 
+body{
+	
+	background: rgba(0, 0, 0, 0.2);
+}
+input {
+	
+	display:none;
+}
+.containers {
+
+width: 96%;
+text-align: center;
+border-radius:100px;
+background:#0063B2FF;
+margin-left:30px;
+}
+
+
+
+.head h1{
+
+
+font-weight: normal; 
+font-size: 55px;
+position: relative; 
+margin: 40px 0;
+color:white;
+
+} 
+.head h1::before{
+
+content: '';
+position: absolute;
+width: 100px;
+height: 3px;
+background-color: crimson;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+	
+	0%{
+		width;100px;
+	}
+50%{
+	width:200px;
+	}
+100%{
+	
+	width:300px;
+	}
+}
+.home{
+	
+	margin-left:540px;
+	margin-bottom:20px;
+	
+}
+.home ul li{
+	background-color:#EEB238FF;
+	width:50px;
+	border:2px solid black;
+	height:50px;
+	text-align:center;
+	line-height:43px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:100px;
+	margin-left:-500px;
+	margin-right:3px;
+	font-size:20px;
+	margin-top:-10px;
+	
+}
+.home  :hover{
+background:yellow;
+border-radius:100px;
+
+}
+.menu{
+	
+	margin-left:540px;
+	margin-bottom:20px;
+	
+}
+
+.menu ul li{
+	background-color:#EEB238FF;
+	width:130px;
+	border:1px solid black;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	float:left;
+	text-decoration:none;
+	list-style:none;
+	border-radius:100px;
+	margin-left:2px;
+	margin-right:3px;
+	margin-top:-10px;
+	
+}
+.menu ul li a{
+
+	text-decoration:none;
+	color:black;
+	display:block;
+}
+.menu ul li.active a{
+	
+	background:black;
+	color:lime;
+	border-radius:100px;
+}
+.menu ul li a:hover{
+	background:black;
+	color:lime;
+	border-radius:100px;
+
+	}
+.menu  sub {
+	display:none;
+}
+.menu ul ul{
+	display:none;
+
+} 
+.menu ul li:hover ul {
+	display:block; 
+}
+
+.container{
+	
+	max-width:1300px;
+	margin:auto;
+	background:#9CC3D5FF;
+	overflow:auto;
+	margin-top:10px;
+}
+.gallery{
+	margin:10px;
+	border:2px solid black;
+	float:left;
+	width:390px;
+	margin-left:25px;
+	
+	
+}
+.gallery img{
+	height:180px;
+	width:100%;
+	border-bottom:2px solid black;
+	
+}
+.desc{
+	
+	padding:10px;
+	text-align:center;
+	
+}
+
+.footer{
+  background:#333;
+  text-align:center;
+  
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 5rem;
+}
+
+.footer .box-container .box h3{
+  font-size:35px;
+  padding:.7rem 0;
+  color:yellow;
+}
+
+.footer .box-container .box p{
+  font-size: 1rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size:20px;
+  padding:.7rem 0;
+  color:#eee;
+  text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+  color:orange;
+  text-decoration: underline;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:orange;
+}
+
+
+
+</style>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AM Webtech</title>
+
+</head>
+
+<body>
+
+<div class="containers">
+
+<div class="head"><h1><b>𝐎𝐔𝐑 𝐆𝐀𝐋𝐋𝐄𝐑𝐘</b></h1> </div>
+
+</div>
+<nav>
+
+<div class="home">
+
+<ul>
+		<li><a href="main.html"  >🏠</li>
+		</ul>
+
+</div>
+		<div class="menu">
+<ul>
+		<li><a href="photogalleryy.html">Photos </a></li>
+		<li class="active"><a href="videogallery.html">Videos</li></ul>
+</div>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+
+<div class="gallery">
+		<a href="img/Videogallery  (1).mp4">
+			<video src="img/Videogallery  (1).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">DwrkaDish Darshan</div>
+	</div>
+
+<div class="gallery">
+		<a href="img/Videogallery  (2).mp4">
+			<video src="img/Videogallery  (2).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Road Friends Trip</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (3).mp4">
+			<video src="img/Videogallery  (3).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Airpot View</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (4).mp4">
+			<video src="img/Videogallery  (4).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Somnath Mahadev Darshan</div>
+	</div>
+	
+	
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (6).mp4">
+			<video src="img/Videogallery  (6).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Under Water</div>
+	</div>
+	
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (7).mp4">
+			<video src="img/Videogallery  (7).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Mountain Video Shooting</div>
+	</div>
+
+<div class="gallery">
+		<a href="img/Videogallery  (8).mp4">
+			<video src="img/Videogallery  (8).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Goa Beach Shooting</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (9).mp4">
+			<video src="img/Videogallery  (9).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Mountain Video Shooting</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (10).mp4">
+			<video src="img/Videogallery  (10).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Kedarnath Yatra</div>
+	</div>
+	
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (11).mp4">
+			<video src="img/Videogallery  (11).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Mountain Top View</div>
+	</div>
+	
+	<div class="gallery">
+		<a href="img/Videogallery  (12).mp4">
+			<video src="img/Videogallery  (12).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Ambaji Temple Darshan</div>
+	</div>
+
+<div class="gallery">
+		<a href="img/Videogallery  (13).mp4">
+			<video src="img/Videogallery  (13).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Kedarnath Temple </div>
+	</div>
+	
+
+	<div class="gallery">
+		<a href="img/Videogallery  (19).mp4">
+			<video src="img/Videogallery  (19).mp4" controls="controls" width="100%">
+		</a>
+		<div class="desc">Sky Diving Video</div>
+	</div>
+
+	
+</div>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>For a travel site, this means that design can be the determining factor in whether a visitor trusts recommendations and information.</p>
+        </div>
+         <div class="box">
+            <h3><b>Branch Locations</b></h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+           <h3> <b>Quick Links</b></h3>
+            <a href="main.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Historicalplace.html">Places</a>
+            <a href="pakages.html">packages</a>
+            <a href="photogalleryy.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3><b>Follow Us</b></h3>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+            <a href="https://twitter.com/login?lang=en">Twitter</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> © Copyright @ 2023  &emsp; created by  <br><br> <span> ✦Ravi✦</span> 
+	
+	
+
+</section>
+</body>
+
+</html>
