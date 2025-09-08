@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="img/logo1.png" alt="Logo" /></div>
+    <div class="write" style="height: auto;">Netflix</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 style="color: red;">Unlimited movies, TV shows and more.</h1>
+    <p >Watch anywhere. Watch anytime.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="row-section">
+    <h2>Popular on Netflix</h2>
+    <div class="row">
+      <div class="card"><img src="img/poster 2.jfif" /></div>
+      <div class="card"><img src="img/poster 3.jfif"/></div>
+      <div class="card"><img src="img/poster 4.jfif"/></div>
+      <div class="card"><img src="img/poster 5.jfif"/></div>
+      <div class="card"><img src="img/poster 6.jfif"/></div>
+      <div class="card"><img src="img/poster 7.jfif"/></div>
+      <div class="card"><img src="img/poster 8.jfif"/></div>
+      <div class="card"><img src="img/poster 10.jfif"/></div>
+      
+    </div>
+  </section>
+
+  <section class="row-section">
+    <h2>Korean show, Must watch</h2>
+    <div class="row">
+      <div class="card"><img src="img/korean 2.jfif"/></div>
+      <div class="card"><img src="img/korean 1.jfif"/></div>
+      <div class="card"><img src="img/korean 3.jfif"/></div>
+      <div class="card"><img src="img/korean 5.jfif"/></div>
+      <div class="card"><img src="img/korean 6.jfif"/></div>
+      <div class="card"><img src="img/korean 7.jfif"/></div>
+      <div class="card"><img src="img/korean 8.jfif"/></div>
+      <div class="card"><img src="img/korean 9.jfif"/></div>
+      <div class="card"><img src="img/korean 10.jfif"/></div>
+      
+    </div>
+  </section>
+
+  <section class="row-section">
+    <h2>Your favourite cartoons</h2>
+    <div class="row">
+      <div class="card"><img src="img/poster 2.jfif"/></div>
+      <div class="card"><img src="img/poster 3.jfif"/></div>
+      <div class="card"><img src="img/poster 4.jfif"/></div>
+      <div class="card"><img src="img/poster 5.jfif"/></div>
+      <div class="card"><img src="img/poster 6.jfif"/></div>
+      <div class="card"><img src="img/poster 7.jfif"/></div>
+      <div class="card"><img src="img/poster 8.jfif"/></div>
+      <div class="card"><img src="img/poster 9.jfif"/></div>
+      <div class="card"><img src="img/poster 10.jfif"/></div>
+      
+    </div>
+  </section>
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+      <li><input type="checkbox" id="q1"><label for="q1">What is Netflix?</label><div class="answer">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+          You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div></li>
+      <li><input type="checkbox" id="q2"><label for="q2">How much does it cost?</label><div class="answer">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</div></li>
+      <li><input type="checkbox" id="q3"><label for="q3">What can I watch on Netflix</label><div class="answer">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div></li>
+      <li><input type="checkbox" id="q4"><label for="q4">How do I cancle?</label><div class="answer">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div></li>    
+    </ul>
+  </section>
+
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="trailerIframe" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Netflix Clone. All rights reserved by Vegad Ravi.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
