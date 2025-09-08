@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ola Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Ola</div>
+    <nav>
+      <ul>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Drive</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Book a ride in minutes</h1>
+      <p>Fast, safe, and affordable rides near you</p>
+    </div>
+    <div class="booking-form">
+      <input type="text" id="pickup" placeholder="Pickup Location" />
+      <input type="text" id="drop" placeholder="Drop Location" />
+      <button onclick="bookRide()">Book Now</button>
+    </div>
+  </section>
+
+  <section class="vehicles">
+    <h2>Choose Your Ride</h2>
+    <div class="vehicle-list">
+      <div class="vehicle">
+        <img src="https://via.placeholder.com/100" alt="Auto" />
+        <p>Ola Auto</p>
+      </div>
+      <div class="vehicle">
+        <img src="https://via.placeholder.com/100" alt="Mini" />
+        <p>Ola Mini</p>
+      </div>
+      <div class="vehicle">
+        <img src="https://via.placeholder.com/100" alt="Sedan" />
+        <p>Ola Sedan</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ola Clone. Built for learning purposes only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
